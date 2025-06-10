@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Official portfolio of Bartosz Bryg – computer science student, researcher, and developer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bartosz Bryg</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="\styles.css">
+</head>
+<body>
+    <header>
+        <div class="container" img="\images\Graph-Nodes-AI-.jpg">
+            <h1>Welcome to My Personal Website</h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#about">Bartosz's Homepage</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                </ul>
+                <div class="search-container">
+                    <button id="search-toggle">
+                        🔍
+                    </button>
+                <form id="search-form" class="hidden" role="search">
+                    <input type="search" placeholder="Search..." aria-label="Search">
+                </form>
+                </div>
+            </nav>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/bartosz-bryg/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/bartoszbryg" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://njit.joinhandshake.com/profiles/wduzr9" target="_blank"><i class="fas fa-handshake"></i></a>
+                    <a href="mailto:bartosz.bryg@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+        </div>
+    </header>
+    
+    <section class="about-me about">
+        <div class="about-container">
+            <div class="left-panel">
+            <img src="ProfilePicture.webp" alt="Bartosz Bryg" class="profile-pic">
+            <h2>Bartosz Bryg</h2>
+            <p class="title">Computer Scientist</p>
+            <p>New Jersey Institute of Technology<br>Albert Dorman Honors College</p>
+            <ul class="highlights">
+                <li>AI & Graphs Specialist</li>
+                <li>Drones & Robotics</li>
+                <li>Honors Student with 4.0 GPA</li>
+                <li>NCAA Division I Athlete</li>
+                <li>Data Science Researcher</li>
+            </ul>
+            </div>
+            <div class="right-panel">
+            <h2>About Me</h2>
+            <p>Hi, I’m Bartosz Bryg – a third-year Computer Science student at NJIT, minoring in Drones and Robotics and maintaining a 4.0 GPA. I’m part of the Albert Dorman Honors College and an NCAA Division I swimmer, which has sharpened my discipline, time management, and commitment to excellence.</p>
+            <p>At NJIT’s Institute for Data Science, I work on high-performance graph algorithms for large-scale network analysis, collaborating with PhD researchers and faculty. Our projects, including partnerships with Harvard and the University of Illinois, support breakthroughs in brain network and AI research. I was recently recognized with the Grace Hopper AI Research Award for my work on cluster analysis.</p>
+            <p>My background bridges software and hardware - from distributed graph analytics to building intelligent robotic systems. I’m passionate about developing efficient, real-world tech that advances both research and society.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="research-graph">
+        <h2>Research Focus</h2>
+            <div class="graph-container">
+                <div class="node" style="top: 10%; left: 10%;">High Performance Computing</div>
+                <div class="node" style="top: 15%; left: 65%;">Parallel Graph Algorithms</div>
+                <div class="node" style="top: 40%; left: 10%;">Large-Scale Graph Analytics</div>
+                <div class="node" style="top: 45%; left: 65%;">Distributed Programming</div>
+                <div class="node" style="top: 75%; left: 40%;">Algorithm Design to Solve Real-World Datasets Problems</div>
+
+                <svg class="graph-lines" width="100%" height="100%">
+                    <line x1="25%" y1="14%" x2="70%" y2="21%" stroke="#00bfff" stroke-width="2" />
+                    <line x1="32%" y1="15%" x2="70%" y2="50%" stroke="#00bfff" stroke-width="2" />
+                    <line x1="25%" y1="15%" x2="25%" y2="50%" stroke="#00bfff" stroke-width="2" />
+                    <line x1="75%" y1="15%" x2="75%" y2="50%" stroke="#00bfff" stroke-width="2" />
+                    <line x1="32%" y1="50%" x2="55%" y2="80%" stroke="#00bfff" stroke-width="2" />
+                    <line x1="80%" y1="50%" x2="55%" y2="80%" stroke="#00bfff" stroke-width="2" />
+                    <line x1="70%" y1="20%" x2="55%" y2="80%" stroke="#00bfff" stroke-width="2" />
+                    <line x1="70%" y1="20%" x2="30%" y2="45%" stroke="#00bfff" stroke-width="2" />
+                </svg>
+            </div>
+    </section>
+
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+        <div class="card experience">
+            <h3>Research Assistant @ NJIT</h3>
+            <p>Developed scalable cluster analysis algorithms for neural and social networks.</p>
+        </div>
+        <div class="card experience">
+            <h3>Software Intern @ NVIDIA</h3>
+            <p>Optimized data pipelines for graph-based GPU computation tasks.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="card projects">
+            <h3>Graph Analytics Toolkit</h3>
+            <p>High-performance graph metrics library for large datasets using Chapel and Python.</p>
+        </div>
+        <div class="card projects">
+            <h3>ML-Driven Network Anomaly Detection</h3>
+            <p>Used transformers and GNNs to identify anomalies in financial transaction graphs.</p>
+        </div>
+    </section>
+
+
+    <section id="courses" class="courses-section">
+    <h2>College Courses</h2>
+    <div class="courses-grid">
+        <div class="course-card">
+        <h3>Introduction to Computer Science</h3>
+        <button class="toggle-btn">▼ Description</button>
+        <p class="description">Covers basics of data structures, algorithms, and computational thinking.</p>
+        </div>
+        <div class="course-card">
+        <h3>Discrete Mathematics</h3>
+        <button class="toggle-btn">▼ Description</button>
+        <p class="description">Logic, set theory, combinatorics, and graph theory essential to CS.</p>
+        </div>
+        <div class="course-card">
+        <h3>Course Name</h3>
+        <button class="toggle-btn">▼ Description</button>
+        <p class="description">Description of the course.</p>
+        </div>
+        <div class="course-card">
+        <h3>Course Name</h3>
+        <button class="toggle-btn">▼ Description</button>
+        <p class="description">Description of the course.</p>
+        </div>
+        <div class="course-card">
+        <h3>Course Name</h3>
+        <button class="toggle-btn">▼ Description</button>
+        <p class="description">Description of the course.</p>
+        </div>
+        <div class="course-card">
+        <h3>Course Name</h3>
+        <button class="toggle-btn">▼ Description</button>
+        <p class="description">Description of the course.</p>
+        </div>
+        <div class="course-card">
+        <h3>Course Name</h3>
+        <button class="toggle-btn">▼ Description</button>
+        <p class="description">Description of the course.</p>
+        </div>
+        <div class="course-card">
+        <h3>Course Name</h3>
+        <button class="toggle-btn">▼ Description</button>
+        <p class="description">Description of the course.</p>
+        </div>
+        <div class="course-card">
+        <h3>Course Name</h3>
+        <button class="toggle-btn">▼ Description</button>
+        <p class="description">Description of the course.</p>
+        </div>
+        <div class="course-card">
+        <h3>Course Name</h3>
+        <button class="toggle-btn">▼ Description</button>
+        <p class="description">Description of the course.</p>
+        </div>
+        <div class="course-card">
+        <h3>Course Name</h3>
+        <button class="toggle-btn">▼ Description</button>
+        <p class="description">Description of the course.</p>
+        </div>
+        <div class="course-card">
+        <h3>Course Name</h3>
+        <button class="toggle-btn">▼ Description</button>
+        <p class="description">Description of the course.</p>
+        </div>
+    </div>
+    </section>
+    
+
+    <section id="awards" class="container">
+        <h2>Awards</h2>
+        <div class="card awards">
+            <h3>NSF Grace Hopper AI Research Award</h3>
+            <p>Recognized for contributions to scalable graph pattern recognition techniques.</p>
+        </div>
+        <div class="card awards">
+            <h3>Pi Kappa Phi National Scholar</h3>
+            <p>Awarded for academic excellence and fraternity leadership.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me via email at <a href="mailto:bartosz.bryg@gmail.com">bartosz.bryg@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Bartosz Bryg. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
