@@ -28,7 +28,7 @@ const NODE_DATA = {
     links: [
       { label: 'Arkouda-NJIT GitHub (cm branch)', icon: 'fab fa-github', url: 'https://github.com/Bears-R-Us/arkouda-njit/tree/cm' },
       { label: 'Chapel CopyAggregation Module', icon: 'fab fa-github', url: 'https://github.com/chapel-lang/chapel/blob/main/modules/packages/CopyAggregation.chpl' },
-      { label: 'Aggregation Framework PDF', icon: 'fas fa-file-pdf', url: 'slides/Toward_A_General_Aggregation_Framework_In_Chapel.pdf' }
+      { label: 'Aggregation Framework PDF', icon: 'fas fa-file-pdf', url: './slides/Toward_A_General_Aggregation_Framework_In_Chapel.pdf' }
     ]
   },
   algorithm: {
@@ -36,7 +36,7 @@ const NODE_DATA = {
     desc: 'I design scalable algorithms for real-world graph datasets — from community detection on neural connectomes to fraud detection in large-scale blockchain transaction graphs.',
     links: [
       { label: 'Arkouda-NJIT GitHub (Cluster_Analysis)', icon: 'fab fa-github', url: 'https://github.com/Bears-R-Us/arkouda-njit/tree/Cluster_Analysis' },
-      { label: 'CAM Project Slides', icon: 'fas fa-file-powerpoint', url: 'slides/CAM Project Presentation.pptx' }
+      { label: 'CAM Project Slides', icon: 'fas fa-file-powerpoint', url: './slides/CAM Project Presentation.pptx' }
     ]
   },
   ml: {
@@ -52,7 +52,7 @@ const NODE_DATA = {
     links: [
       { label: 'WCC Optimization Paper', icon: 'fas fa-file-alt', url: 'https://arxiv.org/abs/2509.02590' },
       { label: 'WCC Extreme Scale Paper', icon: 'fas fa-file-alt', url: 'https://doi.org/10.21203/rs.3.rs-8991284/v1' },
-      { label: 'IKC Presentation', icon: 'fas fa-file-powerpoint', url: 'slides/IKC Presentation.pptx' }
+      { label: 'IKC Presentation', icon: 'fas fa-file-powerpoint', url: './slides/IKC Presentation.pptx' }
     ]
   }
 };
