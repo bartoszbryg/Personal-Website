@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Official portfolio of Bartosz Bryg – computer science student, researcher, and developer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bartosz Bryg</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href=".\styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bartosz Bryg</h1>
+            <p class="header-tagline">CS Researcher &nbsp;·&nbsp; HPC &nbsp;·&nbsp; AI &nbsp;·&nbsp; Systems</p>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/bartosz-bryg/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/bartoszbryg" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://njit.joinhandshake.com/profiles/wduzr9" target="_blank"><i class="fas fa-handshake"></i></a>
+                <a href="mailto:bartosz.bryg@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="about-me about">
+        <div class="about-container">
+            <div class="left-panel">
+                <img src="/images/ProfilePicture.webp" alt="Bartosz Bryg" class="profile-pic">
+                <h2>Bartosz Bryg</h2>
+                <p class="title">Computer Scientist</p>
+                <p>New Jersey Institute of Technology<br>Albert Dorman Honors College</p>
+                <ul class="highlights">
+                    <li>HPC &amp; Scalable Systems</li>
+                    <li>AI &amp; Graph Algorithms</li>
+                    <li>Honors Student · 4.0 GPA</li>
+                    <li>NCAA Division I Athlete</li>
+                    <li>Drones &amp; Robotics</li>
+                </ul>
+            </div>
+            <div class="right-panel">
+                <h2>About Me</h2>
+                <p>I'm Bartosz Bryg, a third-year Computer Science student at NJIT, minoring in Drones and Robotics while maintaining a 4.0 GPA. I'm part of the Albert Dorman Honors College and compete as an NCAA Division I swimmer — experiences that have strengthened my discipline, resilience, and ability to perform under pressure.</p>
+                <p>At NJIT's Institute for Data Science, I research high-performance graph algorithms for large-scale network analysis with PhD researchers and faculty. My work focuses on distributed graph analytics, scalable community detection, and AI-driven data analysis — contributing to collaborations with Harvard University and UIUC. I was recently recognized with the Grace Hopper AI Research Award for my work in cluster analysis.</p>
+                <p>My interests span high-performance computing, scalable algorithms, AI, distributed systems, and backend engineering. I enjoy building systems end-to-end, but I'm especially drawn to the large-scale infrastructure users never directly see — the kind that quietly powers everything behind the scenes.</p>
+                <p>Whether it's distributed graph frameworks, blockchain fraud detection pipelines, RESTful APIs, or ML systems, I'm drawn to solving hard engineering problems with elegant and scalable solutions — particularly at the intersection of performance, architecture, and practical impact.</p>
+                <p>Along the way, I co-authored a paper accepted at IEEE HPEC 2025 and had a talk accepted at ChapelCon 2025 while still in my junior year. For me, the most exciting part of engineering is turning complex ideas into systems that are fast, reliable, and built to scale.</p>
+            </div>
+        </div>
+    </section>
+
+<hr style="margin: 40px auto; width: 90%; border: none; border-top: 1px solid #e0e0e0;">
+
+    <!-- RESEARCH FOCUS -->
+    <section class="research-graph">
+        <h2>Research Focus</h2>
+        <div class="graph-container">
+            <div class="node" data-node="hpc"            style="top: 20%; left:  8%;">High Performance Computing</div>
+            <div class="node" data-node="parallel-graph" style="top: 20%; left: 65%;">Parallel Graph Algorithms</div>
+            <div class="node" data-node="large-scale"    style="top: 50%; left:  8%;">Large-Scale Graph Analytics</div>
+            <div class="node" data-node="distributed"    style="top: 50%; left: 65%;">Distributed Programming</div>
+            <div class="node" data-node="algorithm"      style="top: 78%; left: 40%;">Algorithm Design to Solve Real-World Dataset Problems</div>
+            <div class="node" data-node="ml"             style="top:  3%; left: 36%;">Machine Learning &amp; AI</div>
+            <div class="node" data-node="community"      style="top: 37%; left: 34%;">Network Community Detection</div>
+
+            <svg class="graph-lines" width="100%" height="100%">
+                <!-- hpc - parallel-graph -->
+                <line x1="16%" y1="25%" x2="73%" y2="25%" stroke="#00bfff" stroke-width="2" />
+                <!-- hpc - large-scale -->
+                <line x1="16%" y1="25%" x2="16%" y2="55%" stroke="#00bfff" stroke-width="2" />
+                <!-- parallel-graph - distributed -->
+                <line x1="73%" y1="25%" x2="73%" y2="55%" stroke="#00bfff" stroke-width="2" />
+                <!-- large-scale - algorithm -->
+                <line x1="16%" y1="55%" x2="50%" y2="85%" stroke="#00bfff" stroke-width="2" />
+                <!-- distributed - algorithm -->
+                <line x1="73%" y1="55%" x2="50%" y2="85%" stroke="#00bfff" stroke-width="2" />
+                <!-- parallel-graph - community -->
+                <line x1="73%" y1="25%" x2="43%" y2="44%" stroke="#00bfff" stroke-width="2" />
+                <!-- ml - hpc -->
+                <line x1="43%" y1="8%"  x2="16%" y2="25%" stroke="#00bfff" stroke-width="2" />
+                <!-- ml - parallel-graph -->
+                <line x1="43%" y1="8%"  x2="73%" y2="25%" stroke="#00bfff" stroke-width="2" />
+                <!-- ml - community -->
+                <line x1="43%" y1="8%"  x2="43%" y2="44%" stroke="#00bfff" stroke-width="2" />
+                <!-- community - large-scale -->
+                <line x1="43%" y1="44%" x2="16%" y2="55%" stroke="#00bfff" stroke-width="2" />
+                <!-- community - distributed -->
+                <line x1="43%" y1="44%" x2="73%" y2="55%" stroke="#00bfff" stroke-width="2" />
+                <!-- community - algorithm -->
+                <line x1="43%" y1="44%" x2="50%" y2="85%" stroke="#00bfff" stroke-width="2" />
+            </svg>
+        </div>
+    </section>
+
+<hr style="margin: 40px auto; width: 90%; border: none; border-top: 1px solid #e0e0e0;">
+
+    <!-- SKILLS -->
+    <section class="skills-section">
+        <h2>Technical Skills</h2>
+
+        <!-- Featured bubbles row -->
+        <div class="featured-bubbles">
+            <div class="feat-bubble">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+            </div>
+            <div class="feat-bubble feat-bubble--cpp">
+                <i class="fas fa-memory"></i>
+                <span>C++</span>
+            </div>
+            <div class="feat-bubble feat-bubble--java">
+                <i class="fab fa-java"></i>
+                <span>Java</span>
+            </div>
+            <div class="feat-bubble feat-bubble--c">
+                <i class="fas fa-code"></i>
+                <span>C</span>
+            </div>
+            <div class="feat-bubble feat-bubble--chapel">
+                <i class="fas fa-network-wired"></i>
+                <span>Chapel</span>
+            </div>
+            <div class="feat-bubble feat-bubble--graph">
+                <i class="fas fa-project-diagram"></i>
+                <span>AI &amp; ML Algorithms</span>
+            </div>
+            <div class="feat-bubble feat-bubble--hpc">
+                <i class="fas fa-microchip"></i>
+                <span>HPC &amp; Concurrency</span>
+            </div>
+            <div class="feat-bubble feat-bubble--graph2">
+                <i class="fas fa-share-alt"></i>
+                <span>Graph Algorithms</span>
+            </div>
+        </div>
+
+        <p class="skills-tagline">
+            <span>Low-level &amp; OS programming</span>
+            <span>Shared &amp; distributed-memory concurrency</span>
+            <span>HPC algorithms</span>
+            <span>AI &amp; ML modeling</span>
+            <span>API &amp; database engineering</span>
+        </p>
+
+        <div class="skills-grid">
+
+            <!-- Languages -->
+            <div class="skill-category lang-cat">
+                <div class="skill-cat-header">
+                    <i class="fas fa-terminal"></i>
+                    <h3>Languages &amp; Development</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag primary">Python</span>
+                    <span class="skill-tag primary">C++</span>
+                    <span class="skill-tag primary">Java</span>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">Chapel</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Bash / Shell</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Git</span>
+                </div>
+            </div>
+
+            <!-- HPC & Systems -->
+            <div class="skill-category hpc-cat">
+                <div class="skill-cat-header">
+                    <i class="fas fa-microchip"></i>
+                    <h3>HPC &amp; Distributed Systems</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag primary">High-Performance Computing</span>
+                    <span class="skill-tag primary">Graph Algorithms</span>
+                    <span class="skill-tag primary">Distributed Systems</span>
+                    <span class="skill-tag primary">Parallel Programming</span>
+                    <span class="skill-tag">MPI / OpenMPI</span>
+                    <span class="skill-tag">OpenMP</span>
+                    <span class="skill-tag">SLURM</span>
+                    <span class="skill-tag">Linux / Unix</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                </div>
+            </div>
+
+            <!-- ML & AI -->
+            <div class="skill-category ml-cat">
+                <div class="skill-cat-header">
+                    <i class="fas fa-brain"></i>
+                    <h3>ML &amp; AI Engineering</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag primary">Machine Learning</span>
+                    <span class="skill-tag primary">PyTorch</span>
+                    <span class="skill-tag primary">Graph Neural Networks</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">XGBoost</span>
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">Anomaly Detection</span>
+                    <span class="skill-tag">NumPy · Pandas</span>
+                </div>
+            </div>
+
+            <!-- Backend & Infrastructure -->
+            <div class="skill-category infra-cat">
+                <div class="skill-cat-header">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Backend &amp; Infrastructure</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag primary">REST APIs</span>
+                    <span class="skill-tag primary">AWS</span>
+                    <span class="skill-tag primary">Algorithm Design</span>
+                    <span class="skill-tag">Databases &amp; SQL</span>
+                    <span class="skill-tag">Statistical Modeling</span>
+                    <span class="skill-tag">Linear Algebra</span>
+                    <span class="skill-tag">Optimization</span>
+                    <span class="skill-tag">Research Publications</span>
+                    <span class="skill-tag">Arkouda</span>
+                    <span class="skill-tag">Performance Benchmarking</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<hr style="margin: 40px auto; width: 90%; border: none; border-top: 1px solid #e0e0e0;">
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+
+        <!-- Card 1: Researcher @ NJIT IDS -->
+        <div class="card experience">
+            <h3>Undergraduate Researcher | AI/ML &amp; HPC @ NJIT</h3>
+            <p style="margin: 4px 0 0; font-size: 14px; color: #888;">September 2023 – Present · Institute for Data Science</p>
+            <div class="projects-header">
+                <h3 class="projects-header-tite">Projects
+                    <a href="https://github.com/Bears-R-Us/arkouda-njit" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </h3>
+                <p class="subtext">Contributor to the <a href="https://github.com/NJIT-Data-Science/arkouda-njit" target="_blank">Arkouda-NJIT repository</a></p>
+            </div>
+
+            <div class="project-wrapper">
+
+                <!-- WCC/CM — moved to top -->
+                <div class="project-card">
+                    <h5>🌐 <strong>Well-Connected Communities (WCC) &amp; Connectivity Modifier</strong> — UIUC Collaboration</h5>
+                    <ul>
+                        <li>Integrated Arachne with external C++ programs for <strong>Leiden community detection</strong> and <strong>VieCut minimum-cut computation</strong>, enabling seamless Chapel–C++ interoperability at scale.</li>
+                        <li>Scaled community detection to <strong>2B+ edge graphs</strong>, achieving <strong>&lt;10 min runtime</strong> on <strong>128 cores</strong> — enabling graph analysis at a scale previously impractical in the framework.</li>
+                        <li>Designed and implemented the <strong>distributed-memory parallel executor</strong> for multi-node HPC execution, managing data partitioning and cross-node communication.</li>
+                    </ul>
+                    <p style="margin: 10px 0 4px; font-size: 13px; font-weight: 600; color: #555;">📄 Research Papers</p>
+                    <ul style="margin: 0; font-size: 13.5px;">
+                        <li><a href="https://doi.org/10.21203/rs.3.rs-8991284/v1" target="_blank"><strong>Well-Connected Community Detection at Extreme Scale: Shared- and Distributed-Memory Parallel Algorithms</strong></a></li>
+                        <li><a href="https://arxiv.org/abs/2509.02590" target="_blank"><strong>On the Optimization of Methods for Establishing Well-Connected Communities</strong></a> — arXiv:2509.02590</li>
+                    </ul>
+                    <div class="project-card-links">
+                        <a href="https://github.com/Bears-R-Us/arkouda-njit/tree/cm" target="_blank" class="proj-link proj-link--github"><i class="fab fa-github"></i> GitHub (cm branch)</a>
+                    </div>
+                </div>
+
+                <!-- HiPerMotif -->
+                <div class="project-card" onclick="window.open('https://www.arxiv.org/abs/2507.04130', '_blank')">
+                    <i class="fas fa-external-link-alt external-link-icon" title="Open external link"></i>
+                    <h5><strong>HiPerMotif</strong>: Parallel Subgraph Isomorphism in Property Graphs</h5>
+                    <ul>
+                        <li>Co-authored a <strong>published research paper</strong> (IEEE HPEC '25) introducing <em>HiPerMotif</em>, a hybrid-parallel subgraph isomorphism algorithm implemented in <strong>Arachne</strong>.</li>
+                        <li>Validated on the <strong>H01 human cortex connectome</strong> — a <strong>147M-edge</strong> neuroscience graph — achieving <strong>3–10× runtime and memory improvements</strong> over VF3P, Glasgow, and SLF.</li>
+                        <li>Benchmarked on synthetic graphs (Erdős–Rényi, scale-free, small-world) and real-world datasets including <strong>Flywire, Hemibrain, Amazon, Twitter, and web-Stanford</strong>.</li>
+                        <li>Currently extending to <strong>subgraph enumeration and motif discovery</strong> research within the Arachne framework.</li>
+                    </ul>
+                    <div class="project-card-links">
+                        <a href="https://github.com/Bears-R-Us/arkouda-njit/tree/HiPerMotif-Paper" target="_blank" class="proj-link proj-link--github" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub (HiPerMotif-Paper branch)</a>
+                    </div>
+                </div>
+
+                <!-- Cluster Analysis -->
+                <div class="project-card">
+                    <h5>🔍 <strong>Cluster Analysis Metrics</strong> for Network Pattern Detection <span style="font-size:12px;color:#888;font-weight:400;">(NSF Award #2109988)</span></h5>
+                    <ul>
+                        <li>Developed 100+ scalable <strong>clustering algorithms</strong> in Arachne for pattern discovery across <strong>neural, transportation, and social networks</strong>.</li>
+                        <li>Implemented <strong>BFS, Leiden, Louvain, IKC, Brandes</strong> in C, C++, and Chapel — achieving <strong>~400% performance improvement</strong> through parallelism and a custom C/C++ backend.</li>
+                        <li>Supported <strong>Harvard's neural network research</strong>, enabling scalable graph analysis for brain connectome discovery.</li>
+                        <li>Collaborated with Ph.D. researchers at <strong>NJIT</strong> and <strong>UIUC</strong> on metric-driven community detection across large-scale networks.</li>
+                    </ul>
+                    <div class="project-card-links">
+                        <a href="https://github.com/Bears-R-Us/arkouda-njit/tree/Cluster_Analysis" target="_blank" class="proj-link proj-link--github"><i class="fab fa-github"></i> GitHub (Cluster_Analysis branch)</a>
+                        <a href="slides/IKC Presentation.pptx" target="_blank" class="proj-link proj-link--slides"><i class="fas fa-file-powerpoint"></i> IKC Presentation</a>
+                    </div>
+                </div>
+
+                <!-- Aggregation Framework -->
+                <div class="project-card">
+                    <h5>⚡ <strong>Aggregation Framework</strong> Prototype in Chapel — HPE Collaboration</h5>
+                    <ul>
+                        <li>Developed a distributed <strong>aggregation framework prototype</strong> in Chapel in collaboration with <strong>Hewlett Packard Enterprise (HPE)</strong>, targeting high-throughput data movement in HPC environments.</li>
+                        <li>Adapted the framework for the <strong>BFS kernel</strong> in Arachne, implementing 64-bit bitmap visitation arrays and replacing atomic byte arrays to reduce memory contention.</li>
+                        <li>Low-level optimizations achieved a <strong>76× speedup</strong> over the baseline — one of the largest single-PR performance gains in the Arachne codebase.</li>
+                        <li>Accepted as a <strong>talk at ChapelCon 2025</strong>, presenting results to the Chapel language and HPC community.</li>
+                    </ul>
+                    <div class="project-card-links">
+                        <a href="https://github.com/Bears-R-Us/arkouda-njit/tree/cm" target="_blank" class="proj-link proj-link--github"><i class="fab fa-github"></i> GitHub (cm branch)</a>
+                        <a href="https://github.com/chapel-lang/chapel/blob/main/modules/packages/CopyAggregation.chpl" target="_blank" class="proj-link proj-link--github"><i class="fab fa-github"></i> Chapel CopyAggregation</a>
+                        <a href="slides/Toward_A_General_Aggregation_Framework_In_Chapel.pdf" target="_blank" class="proj-link proj-link--pdf"><i class="fas fa-file-pdf"></i> Research Paper (PDF)</a>
+                    </div>
+                </div>
+
+                <!-- Distributed BFS -->
+                <div class="project-card">
+                    <h5>⚙️ <strong>Distributed BFS Optimization</strong> &amp; Graph Construction in Chapel</h5>
+                    <ul>
+                        <li>Enhanced <strong>BFS frontier expansion</strong> via custom aggregators, reorganizing visitation logic inspired by <strong>Graph500</strong> to reduce runtime and improve multi-node scaling.</li>
+                        <li>Developed a <strong>64-bit bitmap visitation array</strong> replacing atomic byte arrays, dramatically reducing memory contention under high-thread parallelism.</li>
+                        <li>Contributed to graph construction routines, improving edge ingestion throughput for large distributed graphs.</li>
+                    </ul>
+                    <div class="project-card-links">
+                        <a href="https://github.com/Bears-R-Us/arkouda-njit/tree/cm" target="_blank" class="proj-link proj-link--github"><i class="fab fa-github"></i> GitHub (cm branch)</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Card 2: Software Engineering Intern -->
+        <div class="card experience">
+            <div class="exp-role-header">
+                <div>
+                    <h3>Software Engineering Intern · ML &amp; Data Systems</h3>
+                    <p class="exp-org">NJIT Institute for Data Science · under Prof. David Bader</p>
+                </div>
+                <span class="exp-date">May 2024 – August 2024</span>
+            </div>
+            <ul class="exp-bullets">
+                <li>Built data ingestion, preprocessing, and validation pipelines for large-scale graph datasets in Python, improving data quality and reliability for downstream ML and analytics workloads.</li>
+                <li>Supported development and evaluation of ML models for anomaly detection — contributing to feature engineering, data preparation, and model validation.</li>
+                <li>Collaborated with Ph.D. student <strong>Fuhuan Li</strong> on graph-based ML research under the direction of <strong>David Bader</strong>, Director and Founder of the Institute for Data Science at NJIT.</li>
+            </ul>
+            <div class="project-wrapper" style="padding: 10px 0 0;">
+                <div class="project-card">
+                    <h5>🔗 <strong>Blockchain Graph Analytics</strong> — Fraud Detection at Scale</h5>
+                    <ul>
+                        <li>Applied graph analytics to blockchain transaction datasets to identify anomalies and potential fraud, tracing circular transaction patterns and suspicious wallet connections.</li>
+                        <li>Implemented scalable fraud detection pipelines using advanced graph traversal algorithms, improving detection accuracy by <strong>40%</strong> and reducing processing time by <strong>50%</strong>.</li>
+                    </ul>
+                    <div class="project-card-links">
+                        <a href="slides/graph_loading_methods.pptx" target="_blank" class="proj-link proj-link--slides"><i class="fas fa-file-powerpoint"></i> Graph Loading Slides</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: University Committee -->
+        <div class="card experience">
+            <div class="exp-role-header">
+                <div>
+                    <h3>University Committee Member</h3>
+                    <p class="exp-org">NJIT English Language Program</p>
+                </div>
+                <span class="exp-date">September 2023 – May 2024</span>
+            </div>
+            <ul class="exp-bullets">
+                <li>Evaluated and supported the English Language Program, which provides undergraduate and graduate students with academic writing, professional communication, and English language proficiency resources.</li>
+                <li>Served on a committee including <strong>Dr. Jerome Paris</strong> (Program Director), <strong>Dr. Victoria Livingstone</strong> (Associate Director), and <strong>Prof. John Egan</strong> (Senior University Lecturer).</li>
+            </ul>
+        </div>
+    </section>
+
+<hr style="margin: 40px auto; width: 90%; border: none; border-top: 1px solid #e0e0e0;">
+
+    <!-- PERSONAL PROJECTS -->
+    <section id="projects" class="container">
+        <h2>Personal Projects</h2>
+
+        <div class="card projects">
+            <h3>Real-Time Payment Processing &amp; Fraud Detection System</h3>
+            <p class="proj-tech">C++ · Java · Python · Spring Boot · PostgreSQL · Graph Analysis · REST APIs</p>
+            <ul style="margin: 8px 0 0; padding-left: 20px; font-size: 15px; line-height: 1.6;">
+                <li>Core transaction engine in <strong>C++</strong> using lock-free queues and atomic operations for ultra-low-latency payment routing across 100+ concurrent sessions.</li>
+                <li><strong>Spring Boot</strong> REST API layer exposes payment endpoints with request validation, JWT auth, and structured error responses — backed by a <strong>PostgreSQL</strong> database tracking accounts, transactions, and audit logs.</li>
+                <li>Fraud detection layer written in <strong>Python</strong>: rule-based checks (velocity, geo-anomaly, threshold) combined with graph-based cycle detection to flag circular transaction rings and suspicious wallet clusters in real time.</li>
+                <li>Architecture directly parallels production fintech systems — separation of high-throughput processing (C++), business logic API (Spring Boot), and intelligent risk scoring (Python/graph).</li>
+            </ul>
+        </div>
+
+        <div class="card projects">
+            <h3>Thread-Safe Rate Limiter</h3>
+            <p class="proj-tech">Java · Concurrency · Token Bucket Algorithm · ConcurrentHashMap · AtomicLong · Synchronized Data Structures</p>
+            <p>Implemented a per-user rate limiter using the <strong>token bucket algorithm</strong>, enforcing long-term rate limits while allowing short bursts. Supports <strong>50+ concurrent users</strong> in simulation without violating constraints. Thread safety achieved via synchronized access patterns and concurrent data structures — with no race conditions under adversarial timing.</p>
+        </div>
+
+        <div class="card projects">
+            <h3>In-Memory Cache Engine with LRU &amp; TTL</h3>
+            <p class="proj-tech">C · Java · HashMap · LinkedList · TTL · System Design · Memory Management</p>
+            <p>Built an in-memory cache supporting fast data access via <strong>LRU eviction</strong> (LinkedHashMap-backed O(1) get/put) and <strong>time-based expiration (TTL)</strong> — automatically invalidating stale entries on access without added processing overhead. Validated across concurrent read/write scenarios, demonstrating consistent-time performance at capacity.</p>
+        </div>
+
+        <div class="card projects">
+            <h3>Automated Flight Deal Finder</h3>
+            <p class="proj-tech">Python · Java · REST APIs · Amadeus API · Sheety API · HTTP · JSON Processing · Maven</p>
+            <p>Built a fully automated system that resolves missing <strong>IATA airport codes</strong> via API, retrieves real-time flight prices across routes, compares them against stored thresholds, and fires <strong>automated price-drop alerts</strong>. Integrated HTTP/JSON APIs to keep records up to date and notify users when fares fall below their target.</p>
+        </div>
+
+        <div class="card projects">
+            <h3>Computer Vision – Smart Video Understanding
+                <a href="https://github.com/bartoszbryg/ComputerVision-VideoUnderstanding" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+            </h3>
+            <p class="proj-tech">Python · YOLO · DeepSORT · BLIP · PyTorch · OpenCV</p>
+            <p>End-to-end real-time computer vision pipeline: <strong>YOLO</strong> detects objects per frame, <strong>DeepSORT</strong> assigns persistent cross-frame track IDs, and <strong>BLIP</strong> generates natural language scene descriptions. Detects semantic events (objects entering/leaving frame, crowd density changes) and outputs an annotated video alongside a structured event log.</p>
+        </div>
+
+        <div class="card projects">
+            <h3>Adaptive ML Pipeline with Interactive Prediction Interface
+                <a href="https://github.com/bartoszbryg/machine-learning-project" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+            </h3>
+            <p class="proj-tech">Python · Scikit-learn · Dash · AWS Elastic Beanstalk · GridSearchCV</p>
+            <p>Full ML pipeline generalizing to any uploaded CSV: automated preprocessing, multi-model comparison (Logistic Regression, Decision Tree, Random Forest) with <strong>GridSearchCV tuning</strong>, and a deployed <strong>Dash web app</strong> with real-time classification and regression predictions. Deployed on <strong>AWS Elastic Beanstalk / Render</strong> via Gunicorn.</p>
+        </div>
+
+        <div class="card projects">
+            <h3>Graph Analytics Toolkit
+                <a href="https://github.com/Bears-R-Us/arkouda-njit/tree/cm" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+            </h3>
+            <p class="proj-tech">Chapel · Python · MPI · OpenMP · HPC · Graph Metrics · Arkouda</p>
+            <p>High-performance graph metrics library for large-scale datasets using Chapel and Python. Designed for parallel execution on multi-node HPC clusters, supporting community detection, centrality, and connectivity metrics across billion-edge graphs.</p>
+        </div>
+
+        <div class="card projects">
+            <h3>ML-Driven Network Anomaly Detection</h3>
+            <p class="proj-tech">Python · PyTorch · GNNs · Transformers · NetworkX · Scikit-learn</p>
+            <p>Used <strong>Graph Neural Networks (GNNs)</strong> and transformer architectures to identify structural anomalies in financial transaction graphs — learning latent embeddings that distinguish normal transaction patterns from fraud clusters.</p>
+        </div>
+
+    </section>
+
+<hr style="margin: 40px auto; width: 90%; border: none; border-top: 1px solid #e0e0e0;">
+
+    <!-- COURSES -->
+    <section id="courses" class="courses-section">
+        <h2>Relevant College Courses</h2>
+        <div class="courses-grid">
+
+            <!-- 1. Intro to CS 1 & 2 -->
+            <div class="course-card">
+                <h3>Introduction to Computer Science 1 &amp; 2</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    Comprehensive intro to CS using Java and Python — OOP, recursion, inheritance, generics, and core data structures (linked lists, stacks, queues, trees, graphs). Covered algorithm design and complexity analysis with an emphasis on building correct, efficient programs from scratch.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Built a generic <code>BinarySearchTree&lt;T&gt;</code> with recursive insert, delete (two-child case via in-order successor), and a custom <code>Iterator&lt;T&gt;</code> inner class — mirroring exactly how Java's standard collections work under the hood.</li>
+                    <li>Implemented HeapSort and benchmarked it against O(n²) sorts on large random and adversarial inputs — empirically confirming asymptotic theory with measured data.</li>
+                </ul>
+            </div>
+
+            <!-- 2. Discrete Math -->
+            <div class="course-card">
+                <h3>Foundations of CS – Discrete Mathematics</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    Mathematical foundations of CS: propositional logic, set theory, proof techniques (induction, contradiction, contrapositive), functions, asymptotic notation, recurrence relations, and introductory graph theory — the toolbox behind every algorithm analysis.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Derived closed-form solutions for recurrence relations from first principles — the same substitution method used to verify runtime bounds for the parallel graph algorithms I develop in research.</li>
+                    <li>Modelled network connectivity and cycle detection as graph reachability problems using DFS — applying the reasoning before ever formally taking a graph algorithms course.</li>
+                </ul>
+            </div>
+
+            <!-- 3. Foundations of CS II -->
+            <div class="course-card">
+                <h3>Foundations of CS II – Theory of Computation</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    Automata theory, computability, and complexity — DFAs, NFAs, PDAs, Turing machines, undecidability (Halting Problem), and complexity classes P, NP, NP-Complete. A rigorous, proof-heavy course answering what computers can and cannot solve efficiently.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Implemented the DFA emptiness decision algorithm (BFS-based reachability from start state) that correctly classifies any encoded DFA — turning abstract decidability theory into working code.</li>
+                </ul>
+            </div>
+
+            <!-- 4. Programming Language Concepts -->
+            <div class="course-card">
+                <h3>Programming Language Concepts</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    PL design from first principles: syntax, semantics, lexical/syntactic analysis, variable binding, scope and lifetime, control flow, OOP, and exception handling. Built a full language toolchain in C++ using manual memory management — no garbage collector.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Built a complete language toolchain in C++ from scratch: lexer → recursive-descent parser → AST interpreter with variable scoping, type safety, and control flow — the same pipeline that underlies every production compiler.</li>
+                    <li>Managed all heap allocations manually with <code>new</code>/<code>delete</code> and deep-copy semantics throughout — a strict no-GC environment that sharpened low-level memory intuition directly applied in HPC C++ work.</li>
+                </ul>
+            </div>
+
+            <!-- 5. Machine Learning -->
+            <div class="course-card">
+                <h3>Machine Learning</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    Supervised, unsupervised, and reinforcement learning — k-NN, logistic/linear regression, SVMs, decision trees, random forests, boosting (AdaBoost, XGBoost), ANNs, RNNs, transformers, VAEs, GANs, PCA, clustering, autoencoders, and deep RL. Hands-on with PyTorch and scikit-learn.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Designed a VAE for unsupervised generation — interpolating through the latent space to produce novel samples — then benchmarked against a GAN trained on identical data to compare output quality and training stability.</li>
+                    <li>Shipped a full-cycle ML product: preprocessing → GridSearchCV selection → Dash web app deployed on AWS with live inference (<a href="https://github.com/bartoszbryg/machine-learning-project" target="_blank"><i class="fab fa-github"></i> View Code</a>).</li>
+                </ul>
+            </div>
+
+            <!-- 6. Data Science -->
+            <div class="course-card">
+                <h3>Data Science</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    Full data science pipeline from EDA to deployment — NumPy, Pandas, Plotly/Dash, regression, classification, tree methods, PyTorch-based neural networks, RNNs, transformers, LLMs, and agentic AI with LangChain/LangGraph.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Deployed a multi-model prediction web app (Logistic Regression, Decision Tree, Random Forest) on <strong>Render</strong> — accepts any uploaded CSV, performs automated preprocessing, and returns live classification or regression results (<a href="https://github.com/bartoszbryg/machine-learning-project" target="_blank"><i class="fab fa-github"></i> View Code</a>).</li>
+                    <li>Built a LangChain/LangGraph multi-agent pipeline with autonomous multi-step reasoning, tool use, and memory — an AI agent that plans its own approach, fetches external data, and synthesises answers end-to-end.</li>
+                </ul>
+            </div>
+
+            <!-- 7. Computer Systems -->
+            <div class="course-card">
+                <h3>Computer Systems</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    Computer organisation from a programmer's perspective — C programming, x86-64 assembly, CPU pipelining, memory hierarchy, caching, virtual memory, and address translation. Explored how high-level C maps all the way down to machine instructions.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Wrote x86-64 assembly interfacing with compiled C — understanding exactly how compilers generate code, manage stack frames, and allocate registers, which directly informs writing performance-critical C/C++ for HPC.</li>
+                    <li>Simulated virtual-to-physical address translation end-to-end: multi-level page table walks, TLB miss modelling, and cache hierarchy performance measurement — connecting theory to real HPC memory bottlenecks.</li>
+                </ul>
+            </div>
+
+            <!-- 8. Intensive Programming in Linux -->
+            <div class="course-card">
+                <h3>Intensive Programming in Linux</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    Comprehensive Linux programming — Bash scripting, systems-level C with dynamic memory and pointers, multi-threading, OpenMPI for distributed computing, web scraping, and end-to-end high-performance application development.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Built a distributed real-time stock tracker with MPI: one process scrapes live prices while workers rank the top 100 — a practical map-reduce pipeline across multiple machines, directly translating to my HPC research workflow.</li>
+                    <li>Implemented A* pathfinding over a dynamically-allocated 2D grid in C with full <code>malloc</code>/<code>free</code> memory management, zero memory leaks verified under Valgrind.</li>
+                    <li>Engineered a multi-threaded web scraper in C using <code>pthreads</code> — concurrent fetching and parsing of financial pages protected by mutex locks across all shared data structures.</li>
+                </ul>
+            </div>
+
+            <!-- 9. Advanced DSA -->
+            <div class="course-card">
+                <h3>Advanced Data Structures &amp; Algorithms</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    Senior-level algorithm design and analysis — sorting, balanced BSTs (AVL, Red-Black), hash tables, heaps, graph algorithms, and core paradigms: divide-and-conquer, greedy methods, and dynamic programming.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Implemented Dijkstra SSSP and Floyd-Warshall APSP, then modelled shortest communication paths in network topology graphs — directly applicable to routing in the distributed HPC systems I work on in research.</li>
+                    <li>Built AVL and Red-Black trees with full rotation logic and proved the height invariant — the same O(log n) guarantee behind B-tree indexing in production databases.</li>
+                </ul>
+            </div>
+
+            <!-- 10. Cybersecurity -->
+            <div class="course-card">
+                <h3>Intro to Cybersecurity</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    Broad overview of cybersecurity — CIA triad, cryptography (AES, RSA, hash functions, PKI), network security, firewalls, IDS/IPS, malware, web vulnerabilities (SQLi, XSS, CSRF), and user authentication. Hands-on with Kali Linux and SEED Labs.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Full recon-to-exploit lab on Kali Linux: <strong>nmap</strong> service enumeration → crafted a packet that bypassed a misconfigured SNORT IDS rule — then switched sides to patch it, experiencing attack and defence in a single exercise.</li>
+                    <li>Demonstrated a live SQL injection attack on a login form, then patched it with parameterised queries — understanding exactly why user input must never reach a raw SQL string.</li>
+                </ul>
+            </div>
+
+            <!-- 11. Database Design -->
+            <div class="course-card">
+                <h3>Database Design &amp; Management</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    Relational database theory and practice — ER/EER modelling, relational algebra, SQL (DDL, DML, complex queries, views), functional dependencies, 3NF normalisation, indexing, hashing, and transaction processing.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Built a team database-backed application end-to-end: 3NF-normalised schema, multi-table SQL queries with window functions and correlated subqueries, index-tuned query plans, and atomic transactions with rollback — production-quality database engineering.</li>
+                </ul>
+            </div>
+
+            <!-- 12. Operating Systems -->
+            <div class="course-card">
+                <h3>Principles of Operating Systems</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    OS fundamentals — processes, threads, synchronisation (mutexes, semaphores), deadlock detection/prevention, CPU scheduling, physical and virtual memory, paging, segmentation, and I/O device management.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Solved Producer-Consumer and Readers-Writers with semaphores and mutex locks — the exact synchronisation primitives underlying the concurrent graph analytics engines I build in my HPC research.</li>
+                </ul>
+            </div>
+
+            <!-- 13. Computer Networks -->
+            <div class="course-card">
+                <h3>Computer Networks</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    Internet protocol stack from link to application — ARP, IP addressing, DHCP, routing algorithms (BGP, Dijkstra), TCP/UDP, congestion control, HTTP, DNS, and NAT. Hands-on with Wireshark and socket programming.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Built a networked multiplayer game over raw TCP sockets with a custom application-layer protocol (handshake, move validation, GG signalling) — then extended it with a RESTful Flask matchmaking API handling skill-based pairing and Elo updates.</li>
+                </ul>
+            </div>
+
+            <!-- 14. Robotics -->
+            <div class="course-card">
+                <h3>Robotics Science Fundamentals</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    Mobile robot kinematics, sensor data processing (ultrasonic, IMU, gyroscope), linear/nonlinear motion control, hardware-in-the-loop simulation, and motion planning — implemented in Python for real differential-drive robots.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Capstone: built a full autonomous perception pipeline — YOLO object detection → DeepSORT persistent tracking → BLIP natural language scene description — deployed on a real differential-drive robot (<a href="https://github.com/bartoszbryg/ComputerVision-VideoUnderstanding" target="_blank"><i class="fab fa-github"></i> View Code</a>).</li>
+                </ul>
+            </div>
+
+            <!-- 15. Linear Algebra -->
+            <div class="course-card">
+                <h3>Linear Algebra</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    Comprehensive linear algebra: Gauss-Jordan elimination, LU/CR/QR/SVD factorizations, determinants, eigenvalues and diagonalization, the four fundamental subspaces (column, row, null, left-null), least squares, and orthogonal diagonalization — the mathematical backbone of HPC, ML, and scientific computing.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Applied <strong>SVD</strong> to implement low-rank image compression — rank-k approximations that trade storage for fidelity, the same technique behind PCA, recommender systems, and latent semantic indexing.</li>
+                    <li>Analysed graph adjacency matrix eigenstructure to derive spectral embeddings — directly linking textbook linear algebra to the spectral clustering methods used in my own research.</li>
+                </ul>
+            </div>
+
+            <!-- 16. Probability & Statistics -->
+            <div class="course-card">
+                <h3>Probability &amp; Statistics</h3>
+                <button class="toggle-btn" data-type="description">▼ Show Description</button>
+                <p class="description toggle-section">
+                    Rigorous probability and statistical inference — discrete distributions (Binomial, Geometric, Poisson), continuous distributions (Uniform, Exponential, Normal), Bayes' theorem, hypothesis testing (z-tests, t-tests, Type I/II errors), confidence intervals, sample-size determination, and linear regression.
+                </p>
+                <button class="toggle-btn" data-type="course-projects">▼ Show Projects</button>
+                <ul class="course-projects toggle-section">
+                    <li>Implemented a <strong>statistical A/B testing pipeline</strong> — z-scores, p-values, confidence intervals, and power analysis — then used it directly to validate performance claims in my HPC research benchmarks.</li>
+                    <li>Modelled graph event arrivals as a <strong>Poisson process</strong>, fitted parameters via MLE, and validated fit with a chi-squared test — applied to characterise query workloads in distributed graph analytics.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+<hr style="margin: 40px auto; width: 90%; border: none; border-top: 1px solid #e0e0e0;">
+
+    <!-- AWARDS -->
+    <section id="awards" class="container">
+        <h2>Awards &amp; Honors</h2>
+
+        <!-- Grace Hopper NSF Award — featured -->
+        <div class="card awards awards--featured">
+            <div class="award-row">
+                <div class="award-info">
+                    <span class="award-tag award-tag--research"><i class="fas fa-flask"></i> NSF Research Award</span>
+                    <h3>Grace Hopper Artificial Intelligence Research Institute Award</h3>
+                    <p>Awarded by the <strong>National Science Foundation</strong> for pioneering scalable algorithms and open-source high-performance computing (HPC) software to advance neuroscience — enabling new discoveries in brain connectomes through large-scale graph analytics at NJIT's Institute for Data Science.</p>
+                </div>
+                <span class="award-year-badge">2025</span>
+            </div>
+        </div>
+
+        <!-- Dorman Scholar -->
+        <div class="card awards">
+            <div class="award-row">
+                <div class="award-info">
+                    <span class="award-tag award-tag--academic"><i class="fas fa-award"></i> Honors College</span>
+                    <h3>Honor Student &amp; Dorman Scholar — Albert Dorman Honors College, NJIT</h3>
+                    <p>Selective admittance into NJIT's Albert Dorman Honors College, issued to first-year students demonstrating exceptional academic performance. The Honors College provides access to advanced research opportunities, distinguished faculty mentorship, and a community of high-achieving students.</p>
+                </div>
+                <span class="award-year-badge">2024</span>
+            </div>
+        </div>
+
+        <!-- Dean's List -->
+        <div class="card awards">
+            <div class="award-row">
+                <div class="award-info">
+                    <span class="award-tag award-tag--academic"><i class="fas fa-graduation-cap"></i> Academic Excellence</span>
+                    <h3>Dean's List — Fall 2023 through Spring 2026</h3>
+                    <p>Earned Dean's List distinction every semester since enrollment at NJIT, maintaining a <strong>3.5 GPA</strong> while simultaneously conducting full-time HPC research and competing as an NCAA Division I athlete — six consecutive semesters.</p>
+                    <div class="semester-chips">
+                        <span>Fall 2023</span><span>Spring 2024</span><span>Fall 2024</span><span>Spring 2025</span><span>Fall 2025</span><span>Spring 2026</span>
+                    </div>
+                </div>
+                <span class="award-year-badge">2023 – 2026</span>
+            </div>
+        </div>
+
+        <!-- Prime Minister's Scholarship -->
+        <div class="card awards">
+            <div class="award-row">
+                <div class="award-info">
+                    <span class="award-tag award-tag--intl"><i class="fas fa-globe"></i> National Scholarship</span>
+                    <h3>Prime Minister's Scholarship — Poland</h3>
+                    <p>Competitive national scholarship awarded by the <strong>Prime Minister of Poland</strong> to high school graduates achieving the highest GPA and outstanding performance on national university entrance examinations — recognizing top academic achievers across the country.</p>
+                </div>
+                <span class="award-year-badge">2022</span>
+            </div>
+        </div>
+
+        <!-- Athletics divider -->
+        <div class="awards-divider">
+            <i class="fas fa-water"></i>
+            <span>NCAA Division I Athletics</span>
+            <i class="fas fa-water"></i>
+        </div>
+
+        <!-- CSC Academic All-District + D1 context -->
+        <div class="card awards awards--athletic">
+            <div class="award-row">
+                <div class="award-info">
+                    <span class="award-tag award-tag--athletic"><i class="fas fa-medal"></i> CSC Academic All-District</span>
+                    <h3>CSC Academic All-District Team — NJIT Men's Swimming &amp; Diving &nbsp;<span class="award-two-time">Two-Time Honoree</span></h3>
+                    <p>Selected to the <strong>College Sports Communicators (CSC) Academic All-District® Team</strong> in both 2025 and 2026, recognizing student-athletes who achieve at the highest level academically while competing at the NCAA Division I level. One of only four NJIT swimmers honored in each selection cycle.</p>
+                    <div class="award-csc-chips">
+                        <span class="award-csc-chip"><i class="fas fa-trophy"></i> 2025 Honoree</span>
+                        <span class="award-csc-chip"><i class="fas fa-trophy"></i> 2026 Honoree</span>
+                    </div>
+                </div>
+                <span class="award-year-badge award-year-badge--athletic">2025 – 2026</span>
+            </div>
+            <p class="award-athlete-note">As a <strong>NCAA Division I swimmer</strong> at NJIT, I train and compete at the highest collegiate level while maintaining a 4.0 GPA and conducting research. The same attributes that make a competitive swimmer — precision under pressure, structured discipline, and consistent high performance — are what I bring to every research problem and system I build.</p>
+        </div>
+
+    </section>
+
+<hr style="margin: 40px auto; width: 90%; border: none; border-top: 1px solid #e0e0e0;">
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me via email at <a href="mailto:bartosz.bryg@gmail.com">bartosz.bryg@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Bartosz Bryg. All rights reserved.</p>
+            <p class="footer-updated">Last updated: <span id="last-updated-date">May 25, 2026<!-- auto --></span></p>
+        </div>
+    </footer>
+    <!-- RESEARCH NODE MODAL -->
+    <div id="node-modal" class="node-modal-overlay" role="dialog" aria-modal="true">
+        <div class="node-modal-card">
+            <button class="node-modal-close" aria-label="Close">&times;</button>
+            <h3 id="node-modal-title"></h3>
+            <p id="node-modal-desc"></p>
+            <div id="node-modal-links" class="node-modal-links"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

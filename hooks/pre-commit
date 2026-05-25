@@ -1,0 +1,5 @@
+#!/bin/sh
+# Stamps today's date into the "Last updated" footer whenever you commit.
+DATE=$(date '+%B %d, %Y')
+sed -i "s|id=\"last-updated-date\">[^<]*|id=\"last-updated-date\">$DATE|" index.html
+git add index.html

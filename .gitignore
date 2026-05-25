@@ -1,0 +1,8 @@
+# Office temporary lock files
+~$*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
